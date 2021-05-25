@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May 25 19:04:06 2021
+# Process ID: 3699746
+# Current directory: /home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.runs/synth_1
+# Command line: vivado -log HIL_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source HIL_wrapper.tcl
+# Log file: /home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.runs/synth_1/HIL_wrapper.vds
+# Journal file: /home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source HIL_wrapper.tcl -notrace

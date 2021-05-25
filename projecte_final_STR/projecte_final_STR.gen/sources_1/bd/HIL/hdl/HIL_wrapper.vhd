@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
---Date        : Tue May 25 18:44:07 2021
+--Date        : Tue May 25 19:02:39 2021
 --Host        : madMarx running 64-bit unknown
 --Command     : generate_target HIL_wrapper.bd
 --Design      : HIL_wrapper

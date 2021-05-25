@@ -9,13 +9,11 @@
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 source HIL_HIL_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2296.051 ; gain = 5.023 ; free physical = 3021 ; free virtual = 8539
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/quim/UPC/STR/Projecte_Final/ip_repo/HIL_1.0'.
 WARNING: [IP_Flow 19-2207] Repository '/home/quim/UPC/STR/Projecte_Final/ip_repo/HIL_1.0' already exists; ignoring attempt to add it again.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/quim/UPC/STR/Projecte_Final/ip_repo/HIL_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Vivado/2020.2/data/ip'.
-update_ip_catalog: Time (s): cpu = 00:00:00.74 ; elapsed = 00:00:08 . Memory (MB): peak = 2296.051 ; gain = 0.000 ; free physical = 2962 ; free virtual = 8501
 Command: synth_design -top HIL_HIL_0_0 -part xc7z010clg400-1 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
@@ -23,38 +21,254 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 2953072
+INFO: [Synth 8-7075] Helper process launched with PID 3699579
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:46 . Memory (MB): peak = 2296.258 ; gain = 0.000 ; free physical = 2154 ; free virtual = 5685
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2291.258 ; gain = 0.000 ; free physical = 389 ; free virtual = 7176
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'HIL_HIL_0_0' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ip/HIL_HIL_0_0/synth/HIL_HIL_0_0.vhd:82]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
-INFO: [Synth 8-3491] module 'HIL_v1_0' declared at '/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/hdl/HIL_v1_0.vhd:5' bound to instance 'U0' of component 'HIL_v1_0' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ip/HIL_HIL_0_0/synth/HIL_HIL_0_0.vhd:146]
-INFO: [Synth 8-638] synthesizing module 'HIL_v1_0' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/hdl/HIL_v1_0.vhd:49]
+INFO: [Synth 8-3491] module 'HIL_v1_0' declared at '/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/3f51/hdl/HIL_v1_0.vhd:5' bound to instance 'U0' of component 'HIL_v1_0' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ip/HIL_HIL_0_0/synth/HIL_HIL_0_0.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'HIL_v1_0' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/3f51/hdl/HIL_v1_0.vhd:49]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
-INFO: [Synth 8-3491] module 'HIL_v1_0_S00_AXI' declared at '/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/hdl/HIL_v1_0_S00_AXI.vhd:6' bound to instance 'HIL_v1_0_S00_AXI_inst' of component 'HIL_v1_0_S00_AXI' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/hdl/HIL_v1_0.vhd:85]
-INFO: [Synth 8-638] synthesizing module 'HIL_v1_0_S00_AXI' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/hdl/HIL_v1_0_S00_AXI.vhd:87]
+INFO: [Synth 8-3491] module 'HIL_v1_0_S00_AXI' declared at '/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/3f51/hdl/HIL_v1_0_S00_AXI.vhd:6' bound to instance 'HIL_v1_0_S00_AXI_inst' of component 'HIL_v1_0_S00_AXI' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/3f51/hdl/HIL_v1_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'HIL_v1_0_S00_AXI' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/3f51/hdl/HIL_v1_0_S00_AXI.vhd:87]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
-WARNING: [Synth 8-614] signal 'x0' is read in the process but is not in the sensitivity list [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/hdl/HIL_v1_0_S00_AXI.vhd:427]
-WARNING: [Synth 8-614] signal 'x1' is read in the process but is not in the sensitivity list [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/hdl/HIL_v1_0_S00_AXI.vhd:427]
-INFO: [Synth 8-3491] module 'HIL_fixpt' declared at '/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/src/HIL_fixpt.vhd:30' bound to instance 'hil0' of component 'HIL_fixpt' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/hdl/HIL_v1_0_S00_AXI.vhd:478]
-INFO: [Synth 8-638] synthesizing module 'HIL_fixpt' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/src/HIL_fixpt.vhd:38]
-INFO: [Synth 8-256] done synthesizing module 'HIL_fixpt' (1#1) [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/src/HIL_fixpt.vhd:38]
-ERROR: [Synth 8-549] port width mismatch for port 'x': port width = 14, actual width = 15 [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/hdl/HIL_v1_0_S00_AXI.vhd:481]
-ERROR: [Synth 8-285] failed synthesizing module 'HIL_v1_0_S00_AXI' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/hdl/HIL_v1_0_S00_AXI.vhd:87]
-ERROR: [Synth 8-285] failed synthesizing module 'HIL_v1_0' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/hdl/HIL_v1_0.vhd:49]
-ERROR: [Synth 8-285] failed synthesizing module 'HIL_HIL_0_0' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ip/HIL_HIL_0_0/synth/HIL_HIL_0_0.vhd:82]
+WARNING: [Synth 8-614] signal 'x0' is read in the process but is not in the sensitivity list [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/3f51/hdl/HIL_v1_0_S00_AXI.vhd:427]
+WARNING: [Synth 8-614] signal 'x1' is read in the process but is not in the sensitivity list [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/3f51/hdl/HIL_v1_0_S00_AXI.vhd:427]
+INFO: [Synth 8-3491] module 'HIL_fixpt' declared at '/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/3f51/src/HIL_fixpt.vhd:30' bound to instance 'hil0' of component 'HIL_fixpt' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/3f51/hdl/HIL_v1_0_S00_AXI.vhd:478]
+INFO: [Synth 8-638] synthesizing module 'HIL_fixpt' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/3f51/src/HIL_fixpt.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'HIL_fixpt' (1#1) [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/3f51/src/HIL_fixpt.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'HIL_v1_0_S00_AXI' (2#1) [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/3f51/hdl/HIL_v1_0_S00_AXI.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'HIL_v1_0' (3#1) [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/3f51/hdl/HIL_v1_0.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'HIL_HIL_0_0' (4#1) [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ip/HIL_HIL_0_0/synth/HIL_HIL_0_0.vhd:82]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:56 . Memory (MB): peak = 2296.258 ; gain = 0.000 ; free physical = 2222 ; free virtual = 5805
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2291.258 ; gain = 0.000 ; free physical = 1166 ; free virtual = 7962
 ---------------------------------------------------------------------------------
-RTL Elaboration failed
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2291.258 ; gain = 0.000 ; free physical = 1158 ; free virtual = 7959
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2291.258 ; gain = 0.000 ; free physical = 1158 ; free virtual = 7959
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2291.258 ; gain = 0.000 ; free physical = 1151 ; free virtual = 7952
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2323.066 ; gain = 0.000 ; free physical = 1062 ; free virtual = 7876
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2323.066 ; gain = 0.000 ; free physical = 1061 ; free virtual = 7876
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2323.066 ; gain = 31.809 ; free physical = 696 ; free virtual = 7554
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2323.066 ; gain = 31.809 ; free physical = 696 ; free virtual = 7554
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2323.066 ; gain = 31.809 ; free physical = 696 ; free virtual = 7554
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2323.066 ; gain = 31.809 ; free physical = 581 ; free virtual = 7445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   47 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 9     
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Multipliers : 
+	              14x32  Multipliers := 1     
+	               6x32  Multipliers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 8     
+	  11 Input   32 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP U0/HIL_v1_0_S00_AXI_inst/hil0/ARG0, operation Mode is: A*(B:0xfff).
+DSP Report: operator U0/HIL_v1_0_S00_AXI_inst/hil0/ARG0 is absorbed into DSP U0/HIL_v1_0_S00_AXI_inst/hil0/ARG0.
+DSP Report: Generating DSP U0/HIL_v1_0_S00_AXI_inst/hil0/ARG0, operation Mode is: C+A*(B:0x28).
+DSP Report: operator U0/HIL_v1_0_S00_AXI_inst/hil0/ARG0 is absorbed into DSP U0/HIL_v1_0_S00_AXI_inst/hil0/ARG0.
+DSP Report: operator U0/HIL_v1_0_S00_AXI_inst/hil0/ARG0 is absorbed into DSP U0/HIL_v1_0_S00_AXI_inst/hil0/ARG0.
+DSP Report: Generating DSP U0/HIL_v1_0_S00_AXI_inst/hil0/ARG0, operation Mode is: A*(B:0x3fff7).
+DSP Report: operator U0/HIL_v1_0_S00_AXI_inst/hil0/ARG0 is absorbed into DSP U0/HIL_v1_0_S00_AXI_inst/hil0/ARG0.
+DSP Report: Generating DSP U0/HIL_v1_0_S00_AXI_inst/hil0/ARG0, operation Mode is: PCIN+A*(B:0xffd).
+DSP Report: operator U0/HIL_v1_0_S00_AXI_inst/hil0/ARG0 is absorbed into DSP U0/HIL_v1_0_S00_AXI_inst/hil0/ARG0.
+DSP Report: operator U0/HIL_v1_0_S00_AXI_inst/hil0/ARG0 is absorbed into DSP U0/HIL_v1_0_S00_AXI_inst/hil0/ARG0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2323.066 ; gain = 31.809 ; free physical = 269 ; free virtual = 7180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|HIL_fixpt   | A*(B:0xfff)      | 15     | 13     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|HIL_fixpt   | C+A*(B:0x28)     | 15     | 7      | 26     | -      | 26     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|HIL_fixpt   | A*(B:0x3fff7)    | 15     | 5      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|HIL_fixpt   | PCIN+A*(B:0xffd) | 15     | 13     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2323.066 ; gain = 31.809 ; free physical = 234 ; free virtual = 7188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2323.066 ; gain = 31.809 ; free physical = 233 ; free virtual = 7188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2323.066 ; gain = 31.809 ; free physical = 229 ; free virtual = 7171
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 2323.066 ; gain = 31.809 ; free physical = 253 ; free virtual = 7243
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 2323.066 ; gain = 31.809 ; free physical = 253 ; free virtual = 7243
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 2323.066 ; gain = 31.809 ; free physical = 253 ; free virtual = 7243
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 2323.066 ; gain = 31.809 ; free physical = 253 ; free virtual = 7243
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 2323.066 ; gain = 31.809 ; free physical = 253 ; free virtual = 7243
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 2323.066 ; gain = 31.809 ; free physical = 253 ; free virtual = 7243
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    51|
+|2     |DSP48E1 |     4|
+|4     |LUT1    |     4|
+|5     |LUT2    |   138|
+|6     |LUT3    |    31|
+|7     |LUT4    |    31|
+|8     |LUT5    |    66|
+|9     |LUT6    |    80|
+|10    |MUXF7   |    18|
+|11    |FDRE    |   297|
+|12    |FDSE    |     5|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 2323.066 ; gain = 31.809 ; free physical = 253 ; free virtual = 7243
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2323.066 ; gain = 0.000 ; free physical = 315 ; free virtual = 7307
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 2323.074 ; gain = 31.809 ; free physical = 315 ; free virtual = 7307
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2323.074 ; gain = 0.000 ; free physical = 480 ; free virtual = 7477
+INFO: [Netlist 29-17] Analyzing 73 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2323.074 ; gain = 0.000 ; free physical = 351 ; free virtual = 7367
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
 INFO: [Common 17-83] Releasing license: Synthesis
-18 Infos, 3 Warnings, 0 Critical Warnings and 5 Errors encountered.
-synth_design failed
-ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
-INFO: [Common 17-206] Exiting Vivado at Tue May 25 18:48:05 2021...
+29 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:36 . Memory (MB): peak = 2323.074 ; gain = 32.023 ; free physical = 500 ; free virtual = 7517
+INFO: [Common 17-1381] The checkpoint '/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.runs/HIL_HIL_0_0_synth_1/HIL_HIL_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP HIL_HIL_0_0, cache-ID = 4f296c3638b71b0d
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.runs/HIL_HIL_0_0_synth_1/HIL_HIL_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file HIL_HIL_0_0_utilization_synth.rpt -pb HIL_HIL_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May 25 19:04:00 2021...

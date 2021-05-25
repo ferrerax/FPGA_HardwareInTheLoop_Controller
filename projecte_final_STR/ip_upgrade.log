@@ -1,6 +1,27 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Tue May 25 19:02:33 2021
+| Host         : madMarx running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'HIL_HIL_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of HIL_HIL_0_0 (user.org:user:HIL:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
 | Date         : Tue May 25 18:42:05 2021
 | Host         : madMarx running 64-bit unknown
 | Command      : upgrade_ip

@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
--- Date        : Tue May 25 18:49:31 2021
+-- Date        : Tue May 25 18:49:30 2021
 -- Host        : madMarx running 64-bit unknown
--- Command     : write_vhdl -force -mode synth_stub
---               /home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ip/HIL_auto_pc_0/HIL_auto_pc_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top HIL_auto_pc_0 -prefix
+--               HIL_auto_pc_0_ HIL_auto_pc_0_stub.vhdl
 -- Design      : HIL_auto_pc_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1

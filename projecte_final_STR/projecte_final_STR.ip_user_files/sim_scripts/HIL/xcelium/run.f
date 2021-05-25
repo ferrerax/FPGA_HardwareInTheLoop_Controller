@@ -17,10 +17,10 @@
   "/opt/Vivado/2020.2/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/HIL/ipshared/c0de/src/HIL_fixpt_pkg.vhd" \
-  "../../../bd/HIL/ipshared/c0de/src/HIL_fixpt.vhd" \
-  "../../../bd/HIL/ipshared/c0de/hdl/HIL_v1_0_S00_AXI.vhd" \
-  "../../../bd/HIL/ipshared/c0de/hdl/HIL_v1_0.vhd" \
+  "../../../bd/HIL/ipshared/3f51/src/HIL_fixpt_pkg.vhd" \
+  "../../../bd/HIL/ipshared/3f51/src/HIL_fixpt.vhd" \
+  "../../../bd/HIL/ipshared/3f51/hdl/HIL_v1_0_S00_AXI.vhd" \
+  "../../../bd/HIL/ipshared/3f51/hdl/HIL_v1_0.vhd" \
   "../../../bd/HIL/ip/HIL_HIL_0_0/sim/HIL_HIL_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/axi_infrastructure_v1_1_0 \
@@ -34,6 +34,15 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/HIL/ip/HIL_processing_system7_0_0/sim/HIL_processing_system7_0_0.v" \
+-endlib
+-makelib xcelium_lib/lib_cdc_v1_0_2 \
+  "../../../../projecte_final_STR.gen/sources_1/bd/HIL/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/proc_sys_reset_v5_0_13 \
+  "../../../../projecte_final_STR.gen/sources_1/bd/HIL/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/HIL/ip/HIL_rst_ps7_0_49M_0/sim/HIL_rst_ps7_0_49M_0.vhd" \
 -endlib
 -makelib xcelium_lib/generic_baseblocks_v2_1_0 \
   "../../../../projecte_final_STR.gen/sources_1/bd/HIL/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
@@ -59,14 +68,7 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/HIL/ip/HIL_auto_pc_0/sim/HIL_auto_pc_0.v" \
 -endlib
--makelib xcelium_lib/lib_cdc_v1_0_2 \
-  "../../../../projecte_final_STR.gen/sources_1/bd/HIL/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
--endlib
--makelib xcelium_lib/proc_sys_reset_v5_0_13 \
-  "../../../../projecte_final_STR.gen/sources_1/bd/HIL/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
--endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/HIL/ip/HIL_rst_ps7_0_49M_0/sim/HIL_rst_ps7_0_49M_0.vhd" \
   "../../../bd/HIL/sim/HIL.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \

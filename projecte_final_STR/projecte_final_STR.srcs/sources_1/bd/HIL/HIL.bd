@@ -11,14 +11,14 @@
       "validated": "true"
     },
     "design_tree": {
-      "HIL_0": "",
       "processing_system7_0": "",
       "ps7_0_axi_periph": {
         "s00_couplers": {
           "auto_pc": ""
         }
       },
-      "rst_ps7_0_49M": ""
+      "rst_ps7_0_49M": "",
+      "HIL_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -87,12 +87,6 @@
       }
     },
     "components": {
-      "HIL_0": {
-        "vlnv": "user.org:user:HIL:1.0",
-        "xci_name": "HIL_HIL_0_0",
-        "xci_path": "ip/HIL_HIL_0_0/HIL_HIL_0_0.xci",
-        "inst_hier_path": "HIL_0"
-      },
       "processing_system7_0": {
         "vlnv": "xilinx.com:ip:processing_system7:5.5",
         "xci_name": "HIL_processing_system7_0_0",
@@ -1469,6 +1463,12 @@
         "xci_name": "HIL_rst_ps7_0_49M_0",
         "xci_path": "ip/HIL_rst_ps7_0_49M_0/HIL_rst_ps7_0_49M_0.xci",
         "inst_hier_path": "rst_ps7_0_49M"
+      },
+      "HIL_0": {
+        "vlnv": "user.org:user:HIL:1.0",
+        "xci_name": "HIL_HIL_0_0",
+        "xci_path": "ip/HIL_HIL_0_0/HIL_HIL_0_0.xci",
+        "inst_hier_path": "HIL_0"
       }
     },
     "interface_nets": {
@@ -1504,9 +1504,9 @@
           "processing_system7_0/M_AXI_GP0_ACLK",
           "ps7_0_axi_periph/S00_ACLK",
           "rst_ps7_0_49M/slowest_sync_clk",
-          "HIL_0/s00_axi_aclk",
           "ps7_0_axi_periph/M00_ACLK",
-          "ps7_0_axi_periph/ACLK"
+          "ps7_0_axi_periph/ACLK",
+          "HIL_0/s00_axi_aclk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -1519,9 +1519,9 @@
         "ports": [
           "rst_ps7_0_49M/peripheral_aresetn",
           "ps7_0_axi_periph/S00_ARESETN",
-          "HIL_0/s00_axi_aresetn",
           "ps7_0_axi_periph/M00_ARESETN",
-          "ps7_0_axi_periph/ARESETN"
+          "ps7_0_axi_periph/ARESETN",
+          "HIL_0/s00_axi_aresetn"
         ]
       }
     },

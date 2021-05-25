@@ -1,8 +1,8 @@
 vhdl xil_defaultlib  \
-"../../../bd/HIL/ipshared/c0de/src/HIL_fixpt_pkg.vhd" \
-"../../../bd/HIL/ipshared/c0de/src/HIL_fixpt.vhd" \
-"../../../bd/HIL/ipshared/c0de/hdl/HIL_v1_0_S00_AXI.vhd" \
-"../../../bd/HIL/ipshared/c0de/hdl/HIL_v1_0.vhd" \
+"../../../bd/HIL/ipshared/3f51/src/HIL_fixpt_pkg.vhd" \
+"../../../bd/HIL/ipshared/3f51/src/HIL_fixpt.vhd" \
+"../../../bd/HIL/ipshared/3f51/hdl/HIL_v1_0_S00_AXI.vhd" \
+"../../../bd/HIL/ipshared/3f51/hdl/HIL_v1_0.vhd" \
 "../../../bd/HIL/ip/HIL_HIL_0_0/sim/HIL_HIL_0_0.vhd" \
 "../../../bd/HIL/ip/HIL_rst_ps7_0_49M_0/sim/HIL_rst_ps7_0_49M_0.vhd" \
 "../../../bd/HIL/sim/HIL.vhd" \
