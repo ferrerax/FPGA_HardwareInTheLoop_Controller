@@ -1,0 +1,60 @@
+
+*** Running vivado
+    with args -log HIL_HIL_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source HIL_HIL_0_0.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source HIL_HIL_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2296.051 ; gain = 5.023 ; free physical = 3021 ; free virtual = 8539
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/quim/UPC/STR/Projecte_Final/ip_repo/HIL_1.0'.
+WARNING: [IP_Flow 19-2207] Repository '/home/quim/UPC/STR/Projecte_Final/ip_repo/HIL_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/quim/UPC/STR/Projecte_Final/ip_repo/HIL_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Vivado/2020.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:00.74 ; elapsed = 00:00:08 . Memory (MB): peak = 2296.051 ; gain = 0.000 ; free physical = 2962 ; free virtual = 8501
+Command: synth_design -top HIL_HIL_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2953072
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:46 . Memory (MB): peak = 2296.258 ; gain = 0.000 ; free physical = 2154 ; free virtual = 5685
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'HIL_HIL_0_0' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ip/HIL_HIL_0_0/synth/HIL_HIL_0_0.vhd:82]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'HIL_v1_0' declared at '/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/hdl/HIL_v1_0.vhd:5' bound to instance 'U0' of component 'HIL_v1_0' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ip/HIL_HIL_0_0/synth/HIL_HIL_0_0.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'HIL_v1_0' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/hdl/HIL_v1_0.vhd:49]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'HIL_v1_0_S00_AXI' declared at '/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/hdl/HIL_v1_0_S00_AXI.vhd:6' bound to instance 'HIL_v1_0_S00_AXI_inst' of component 'HIL_v1_0_S00_AXI' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/hdl/HIL_v1_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'HIL_v1_0_S00_AXI' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/hdl/HIL_v1_0_S00_AXI.vhd:87]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+WARNING: [Synth 8-614] signal 'x0' is read in the process but is not in the sensitivity list [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/hdl/HIL_v1_0_S00_AXI.vhd:427]
+WARNING: [Synth 8-614] signal 'x1' is read in the process but is not in the sensitivity list [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/hdl/HIL_v1_0_S00_AXI.vhd:427]
+INFO: [Synth 8-3491] module 'HIL_fixpt' declared at '/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/src/HIL_fixpt.vhd:30' bound to instance 'hil0' of component 'HIL_fixpt' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/hdl/HIL_v1_0_S00_AXI.vhd:478]
+INFO: [Synth 8-638] synthesizing module 'HIL_fixpt' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/src/HIL_fixpt.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'HIL_fixpt' (1#1) [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/src/HIL_fixpt.vhd:38]
+ERROR: [Synth 8-549] port width mismatch for port 'x': port width = 14, actual width = 15 [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/hdl/HIL_v1_0_S00_AXI.vhd:481]
+ERROR: [Synth 8-285] failed synthesizing module 'HIL_v1_0_S00_AXI' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/hdl/HIL_v1_0_S00_AXI.vhd:87]
+ERROR: [Synth 8-285] failed synthesizing module 'HIL_v1_0' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ipshared/c0de/hdl/HIL_v1_0.vhd:49]
+ERROR: [Synth 8-285] failed synthesizing module 'HIL_HIL_0_0' [/home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.gen/sources_1/bd/HIL/ip/HIL_HIL_0_0/synth/HIL_HIL_0_0.vhd:82]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:56 . Memory (MB): peak = 2296.258 ; gain = 0.000 ; free physical = 2222 ; free virtual = 5805
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 3 Warnings, 0 Critical Warnings and 5 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Tue May 25 18:48:05 2021...

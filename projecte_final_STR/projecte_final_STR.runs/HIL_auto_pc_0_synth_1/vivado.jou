@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May 25 18:45:36 2021
+# Process ID: 2932043
+# Current directory: /home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.runs/HIL_auto_pc_0_synth_1
+# Command line: vivado -log HIL_auto_pc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source HIL_auto_pc_0.tcl
+# Log file: /home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.runs/HIL_auto_pc_0_synth_1/HIL_auto_pc_0.vds
+# Journal file: /home/quim/UPC/STR/Projecte_Final/projecte_final_STR/projecte_final_STR.runs/HIL_auto_pc_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source HIL_auto_pc_0.tcl -notrace
